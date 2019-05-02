@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  height: 100vh;
+  place-items: center;
+  background: #666;
+  overflow: hidden;
+}
+header,
+footer {
+  grid-column: 1 / span 2;
+}
+header{
+  background: black;
+  display: flex;
+  height: 10vh;
+}
+article{
+  background: black;
+  display: flex;
+  height: 70vh;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  font-size: xx-large;
+}
+footer {
+  background: black;
+  display: flex;
+  height: 20vh;
+}
+aside{
+  background: black;
+  display: flex;
+  height: 70vh;
+}
+button{
+  color: white;
+  background-color: black;
+  border: black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 1em;
+}
+.dropbtn {
+  right: 0;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* wrapping front */
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: black;}
+
+.intro{
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+
+
+}
+
+
+/* MailChimp */
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+}
