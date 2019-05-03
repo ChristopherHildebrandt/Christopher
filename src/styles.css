@@ -37,6 +37,30 @@ button{
   background-color: black;
   border: black;
 }
+
+.type-writer,
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed on load */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */      
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end), /* string animation on typing */
+    blink-caret .75s step-end infinite; /* curser keeps blinking */
+}
+
+@keyframes typing { /* The typing effect */
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret { /* The typewriter cursor effect */
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
 .grid {
   display: grid;
   grid-template-columns: 75% 25%;
