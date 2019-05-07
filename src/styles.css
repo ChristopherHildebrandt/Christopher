@@ -1,3 +1,28 @@
+
+/* ===================== GRID START ======================= */
+/* ===================== GRID START ======================= */
+/* ===================== GRID START ======================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 1em;
+}
+
+/* ===================== GRID END ======================= */
+/* ===================== GRID END ======================= */
+/* ===================== GRID END ======================= */
+
+
+
+html { 
+  background: url(img/arrow-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -9,44 +34,15 @@ header,
 footer {
   grid-column: 1 / span 2;
 }
+
+
 header{
   background: black;
   display: flex;
   height: 10vh;
 }
-article{
-  background: black;
-  display: flex;
-  height: 70vh;
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-  font-size: xx-large;
-}
-footer {
-  background: black;
-  display: flex;
-  height: 20vh;
-}
-aside{
-  background: black;
-  display: flex;
-  height: 70vh;
-}
-button{
-  color: white;
-  background-color: black;
-  border: black;
-}
 
-
-.grid {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-gap: 1em;
-}
-
-
-
+/* ===================== HEADER: Bars dropdown*/
 
 /* Dropdown Button */
 .dropbtn {
@@ -91,11 +87,7 @@ button{
   display:block;
 }
 
-
-
-
-
-
+/* ===================== HEADER: Envelope dropdown */
 
 .dropbtn {
   right: 0;
@@ -144,3 +136,45 @@ button{
   clear:left; 
   font:14px Helvetica,Arial,sans-serif; 
 }
+
+
+/* ===================== HEADER END ======================= */
+/* ===================== HEADER END ======================= */
+/* ===================== HEADER END ======================= */
+
+
+
+
+
+
+
+
+
+article{
+  background: black;
+  display: flex;
+  height: 70vh;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  font-size: xx-large;
+}
+footer {
+  background: black;
+  display: flex;
+  height: 20vh;
+}
+aside{
+  background: black;
+  display: flex;
+  height: 70vh;
+}
+button{
+  color: white;
+  background-color: black;
+  border: black;
+}
+
+
+
+
+
