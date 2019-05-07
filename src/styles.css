@@ -38,9 +38,18 @@ button{
   border: black;
 }
 
+
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-gap: 1em;
+}
+
+
+
+
 /* Dropdown Button */
 .dropbtn {
-  background-color: #3498DB;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -48,19 +57,14 @@ button{
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown-bars {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-content-bars {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -70,7 +74,7 @@ button{
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content-bars a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -78,42 +82,21 @@ button{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content-bars a:hover {
+  background-color: #ddd
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-
-
-.type-writer,
-.typewriter{
-  overflow: hidden; /* Ensures the content is not revealed on load */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */      
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(40, end), /* string animation on typing */
-    blink-caret .75s step-end infinite; /* curser keeps blinking */
-}
-
-@keyframes typing { /* The typing effect */
-  from { width: 0 }
-  to { width: 100% }
+.show {
+  display:block;
 }
 
 
-@keyframes blink-caret { /* The typewriter cursor effect */
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
 
-.grid {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-gap: 1em;
-}
+
+
+
+
 .dropbtn {
   right: 0;
   background-color: white;
@@ -124,12 +107,12 @@ button{
   cursor: pointer;
 }
 
-.dropdown {
+.dropdown-envelope {
   position: absolute;
   right: 0;
 }
 
-.dropdown-content {
+.dropdown-content-envelope {
   display: none;
   position: absolute;
   right: 0;
@@ -138,21 +121,20 @@ button{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1; /* wrapping front */
 }
-.dropdown-content a {
+.dropdown-content-envelope a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {background-color: #f1f1f1;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: black;}
-
-.intro{
-  position: absolute;
-  font-family: 'Work Sans', sans-serif;
-
-
+.dropdown-content-envelope a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-envelope:hover .dropdown-content-envelope {
+  display: block;
+}
+.dropdown-envelope:hover .dropbtn {
+  background-color: black;
 }
 
 
