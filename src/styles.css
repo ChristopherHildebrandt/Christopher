@@ -37,6 +37,8 @@ body {
 header {
   background: whitesmoke;
   display: flex;
+  align-items: center;
+  justify-content: center; 
   height: 10vh;
 }
 
@@ -48,11 +50,13 @@ header {
   font-size: 16px;
   border: none;
   cursor: pointer;
+
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown-bars {
   position: relative;
+  align-content: center;
 }
 
 /* Dropdown Content using display: none; to be hidden by default */
@@ -100,7 +104,10 @@ aside {
   background: whitesmoke;
   display: flex;
   height: 70vh;
+  align-items: center;
+  justify-content: center;
 }
+
 /* Aside End ======================================================================================================================== */
 
 /* Footer Start ======================================================================================================================== */
@@ -108,6 +115,9 @@ footer {
   background: whitesmoke;
   display: flex;
   height: 20vh;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
 }
 
 /* Header: Envelope dropdown */
@@ -123,6 +133,7 @@ footer {
 
 .dropdown-envelope {
   position: relative;
+
 }
 
 /* Dropdown Content using display: none; to be hidden by default */
