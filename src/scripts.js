@@ -14,7 +14,7 @@ function barsDropdown() {
 }
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;

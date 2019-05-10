@@ -1,32 +1,29 @@
+/* Removes browser defaults */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* ===================== GRID START ======================= */
-/* ===================== GRID START ======================= */
-/* ===================== GRID START ======================= */
+button {
+  color: black;
+  background-color: white;
+  border: none;
+}
 
+/* Grid End ======================================================================================================================== */
 .grid {
   display: grid;
   grid-template-columns: 75% 25%;
   grid-gap: 1em;
 }
 
-/* ===================== GRID END ======================= */
-/* ===================== GRID END ======================= */
-/* ===================== GRID END ======================= */
-
-
-
-html { 
-  background: url(img/arrow-background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+header,
+footer {
+  grid-column: 1 / span 2;
 }
+/* Grid End ========================================================================================================================== */
 
+/* Body Start ========================================================================================================================== */
 body {
   margin: 0;
   height: 100vh;
@@ -34,24 +31,20 @@ body {
   background: #666;
   overflow: hidden;
 }
-header,
-footer {
-  grid-column: 1 / span 2;
-}
+/* Body End ========================================================================================================================== */
 
-
-header{
-  background: black;
+/* Header START ====================================================================================================================== */
+header {
+  background: whitesmoke;
   display: flex;
   height: 10vh;
 }
 
-/* ===================== HEADER: Bars dropdown*/
-
+/* Header: Bars Dropdown*/
 /* Dropdown Button */
 .dropbtn {
   color: white;
-  padding: 16px;
+  padding: 0px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -60,125 +53,113 @@ header{
 /* The container <div> - needed to position the dropdown content */
 .dropdown-bars {
   position: relative;
-  display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content using display: none; to be hidden by default */
 .dropdown-content-bars {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: whitesmoke;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-bars a {
-  color: black;
+  color: whitesmoke;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* On hover, change the colour of the text */
 .dropdown-content-bars a:hover {
   background-color: #ddd
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
 .show {
-  display:block;
-}
-
-/* ===================== HEADER: Envelope dropdown */
-
-.dropbtn {
-  right: 0;
-  background-color: white;
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown-envelope {
-  position: absolute;
-  right: 0;
-}
-
-.dropdown-content-envelope {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; /* wrapping front */
-}
-.dropdown-content-envelope a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
   display: block;
 }
-.dropdown-content-envelope a:hover {
-  background-color: #f1f1f1;
-}
-.dropdown-envelope:hover .dropdown-content-envelope {
-  display: block;
-}
-.dropdown-envelope:hover .dropbtn {
-  background-color: black;
-}
+/* Header End ======================================================================================================================== */
 
-
-/* MailChimp */
-#mc_embed_signup{
-  background:#fff; 
-  clear:left; 
-  font:14px Helvetica,Arial,sans-serif; 
-}
-
-
-/* ===================== HEADER END ======================= */
-/* ===================== HEADER END ======================= */
-/* ===================== HEADER END ======================= */
-
-
-
-
-
-
-
-
-
-article{
-  background: black;
+/* Article Start ======================================================================================================================== */
+article {
+  background: whitesmoke;
   display: flex;
   height: 70vh;
   font-family: 'Work Sans', sans-serif;
   color: white;
   font-size: xx-large;
 }
-footer {
-  background: black;
-  display: flex;
-  height: 20vh;
-}
-aside{
-  background: black;
+/* Article End ======================================================================================================================== */
+
+/* Aside Start ======================================================================================================================== */
+aside {
+  background: whitesmoke;
   display: flex;
   height: 70vh;
 }
-button{
-  color: white;
+/* Aside End ======================================================================================================================== */
+
+/* Footer Start ======================================================================================================================== */
+footer {
+  background: whitesmoke;
+  display: flex;
+  height: 20vh;
+}
+
+/* Header: Envelope dropdown */
+/* Not needed as .dropbtn is set above in Header: Bars dropdown */
+/* .dropbtn {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+} */
+
+.dropdown-envelope {
+  position: relative;
+}
+
+/* Dropdown Content using display: none; to be hidden by default */
+.dropdown-content-envelope {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-envelope a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-envelope a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-envelope:hover .dropdown-content-envelope {
+  display: block;
+}
+
+.dropdown-envelope:hover .dropbtn {
   background-color: black;
-  border: black;
 }
 
 
-
-
-
+/* MailChimp */
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+/* Footer End ======================================================================================================================== */
