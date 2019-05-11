@@ -28,7 +28,7 @@ body {
   margin: 0;
   height: 100vh;
   place-items: center;
-  background: #666;
+  background: whitesmoke;
   overflow: hidden;
 }
 /* Body End ========================================================================================================================== */
@@ -90,12 +90,35 @@ header {
 
 /* Article Start ======================================================================================================================== */
 article {
-  background: whitesmoke;
+  background: #eae3d3;
   display: flex;
   height: 70vh;
-  font-family: 'Work Sans', sans-serif;
-  color: white;
-  font-size: xx-large;
+  align-items: center;
+  justify-content: center;
+}
+
+/* animation for face */
+/* sizing & colour of element is defined in .article so we use transparent here */
+svg {
+  height: 50vh;
+  width: 50vw;
+  background-color: transparent;
+}
+
+/* The animation property draw 2s defines the duration of the animation; infinate defines that it will repeat indefinitely */
+path {
+  stroke-dasharray: 10;
+  animation: draw 2s infinite;
+}
+
+/* stroke-dashoffset defines the speed of the dash animation */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
 }
 /* Article End ======================================================================================================================== */
 
