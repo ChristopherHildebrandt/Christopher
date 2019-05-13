@@ -5,7 +5,8 @@
 }
 
 /* Grid End ======================================================================================================================== */
-/* Defining a responsive grid layout, to cover screen */
+/* Defining a responsive grid layout, to cover screen
+   used in a way so each page has a degree of uniformity*/
 .grid {
   display: grid;
   grid-template-columns: 75% 25%;
