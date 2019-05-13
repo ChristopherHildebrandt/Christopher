@@ -4,13 +4,8 @@
   padding: 0;
 }
 
-button {
-  color: black;
-  background-color: white;
-  border: none;
-}
-
 /* Grid End ======================================================================================================================== */
+/* Defining a responsive grid layout, to cover screen */
 .grid {
   display: grid;
   grid-template-columns: 75% 25%;
@@ -27,7 +22,7 @@ footer {
 body {
   margin: 0;
   height: 100vh;
-  place-items: center;
+  font-family: 'Heebo', sans-serif;
   background: whitesmoke;
   overflow: hidden;
 }
@@ -45,33 +40,38 @@ header {
 /* Header: Bars Dropdown*/
 /* Dropdown Button */
 .dropbtn {
-  color: white;
-  padding: 0px;
-  font-size: 16px;
+  background-color: whitesmoke; /* match the colour of the grid background */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+  color: black;
   border: none;
-  cursor: pointer;
-
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown-bars {
-  position: relative;
-  align-content: center;
+  background-color: whitesmoke; /* match the colour of the grid background */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+  color: black;
+  border: none;
 }
 
 /* Dropdown Content using display: none; to be hidden by default */
 .dropdown-content-bars {
   display: none;
   position: absolute;
+  align-content: center;
   background-color: whitesmoke;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  cursor: pointer;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-bars a {
-  color: whitesmoke;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -97,12 +97,17 @@ article {
   justify-content: center;
 }
 
+article:hover{
+  background: #708090;
+}
+
 /* animation for face */
 /* sizing & colour of element is defined in .article so we use transparent here */
 svg {
   height: 50vh;
   width: 50vw;
   background-color: transparent;
+  z-index: 1;
 }
 
 /* The animation property draw 2s defines the duration of the animation; infinate defines that it will repeat indefinitely */
@@ -120,6 +125,75 @@ path {
     stroke-dashoffset: 100;
   }
 }
+
+/* M E - text animation */
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+div.opening-text{
+  width: 70%;
+;
+}
+.letter{  
+  position: relative;
+  display: flex;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.05em;
+  color: #eae3d3;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 2;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+/* Defines the speed at which the text animation transitions onto the page on load/refresh */
+.letter, .letter:before, .letter:after{
+  transition: all 1.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
 /* Article End ======================================================================================================================== */
 
 /* Aside Start ======================================================================================================================== */
@@ -130,6 +204,17 @@ aside {
   align-items: center;
   justify-content: center;
 }
+
+/*  */
+.btn-group button {  
+  display: block; /* Make the buttons appear below each other */
+  background-color: whitesmoke; /* match the colour of the grid background */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  color: black;
+  border: none;
+}
+
 
 /* Aside End ======================================================================================================================== */
 
@@ -142,58 +227,3 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
-/* Header: Envelope dropdown */
-/* Not needed as .dropbtn is set above in Header: Bars dropdown */
-/* .dropbtn {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-} */
-
-.dropdown-envelope {
-  position: relative;
-
-}
-
-/* Dropdown Content using display: none; to be hidden by default */
-.dropdown-content-envelope {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content-envelope a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content-envelope a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown-envelope:hover .dropdown-content-envelope {
-  display: block;
-}
-
-.dropdown-envelope:hover .dropbtn {
-  background-color: black;
-}
-
-
-/* MailChimp */
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-}
-/* Footer End ======================================================================================================================== */

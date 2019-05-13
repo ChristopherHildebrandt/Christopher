@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Setting the viewport, giving the browser directions on how to control dimensions and scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- links to external style sheet -->
@@ -13,7 +14,8 @@
     <!-- MailChimp -->
     <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href=https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    
 
     <title>Christopher Leighton. | Portfolio </title>
 </head>
@@ -22,17 +24,17 @@
     <!-- Navigation Starts -->
     <div class="grid">
         <header>
-            <div class="dropdown-bars">
-                <button onclick="barsDropdown()" class="fas fa-bars"></button>
-                <div id="myBarsDropdown" class="dropdown-content-bars">
-                    <a href="">Home</a>
-                    <a href="#">Resume</a>
-                </div>
-            </div>
+        <!-- Keeps a defined grid-layout -->
         </header>
         <!-- Navigation Ends -->
 
         <article>
+            <div class="opening-type">
+                     <span class="letter" data-letter="M">M</span>
+                     <span class="letter" data-letter="E">E</span>
+
+            </div>
+                
             <!-- svg was created with vectr.com and svgomg.com; 
                     vectr.com - drew the solid line image of my face; which is repersented by path d
                     svgomg.com - takes image turns drawn image to html by defining path
@@ -119,37 +121,31 @@
             </svg>
         </article>
         <aside>
-            <div>
-                <button class="aside-btn"><i class="fab fa-github"></i></button>
-                <button class="aside-btn"><i class="fab fa-instagram"></i></button>
-                <button class="aside-btn"><i class="fab fa-linkedin-in"></i></button>
-                <button class="aside-btn"><i class="fab fa-twitter"></i></button>
+            <div class="btn-group">
+                <a href="resume.html"></a>    
+                    <button class="far fa-file"></i></button>
+                </a> 
+                <!-- style="text-decoration:none" used to remove hyperlink underline -->
+                <a href="https://www.github.com/christopherhildebrandt" style="text-decoration:none">
+                    <button class="fab fa-github"></i></button>
+                </a> 
+
+                <a href="https://www.instagram.com/christopherhildebrandt" style="text-decoration:none">
+                    <button class="fab fa-instagram"></i></button>
+                </a>
+
+                <a href="https://www.linkedin.com/christopherhildebrandt" style="text-decoration:none">
+                    <button class="fab fa-linkedin-in"></i></button>
+                </a>
+
+                <a href="https://www.twitter.com/christopherhildebrandt" style="text-decoration:none">
+                    <button class="fab fa-twitter"></i></button>
+                </a>
             </div>
         </aside>
 
         <footer>
-            <div class="dropdown-envelope">
-                <!-- Button class fas fa-bars is from the favicon library -->
-                <button class="fas fa-envelope"></button>
-                <div class="dropdown-content-envelope">
-                    <!-- Begin Mailchimp Signup Form -->
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://icloud.us20.list-manage.com/subscribe/post?u=610e17dc0c055f9a01fd74868&amp;id=465eb3789f"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                                    placeholder="email" required>
-                                <!-- Below makes a hidden entry feild using (aria-hidden = "true", removes bots/hacks from accessing form-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                        name="b_610e17dc0c055f9a01fd74868_465eb3789f" tabindex="-1" value=""></div>
-                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                                        id="mc-embedded-subscribe" class="button"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <!-- Keeps a defined Grid-layout -->
         </footer>
     </div>
     <!-- Links to external scripts -->
