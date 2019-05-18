@@ -7,9 +7,11 @@ Description of your portfolio website, including,
    Purpose 
    Functionality / features 
    Sitemap 
-   Screenshots 
-   Target audience 
-   Tech stack (e.g. html, css, deployment platform, etc) 
+   Screenshots - 
+      Design Process - moodboards, wireframing
+      Trello Evidence 
+   Target audience - Potentional employers 
+   Tech stack -  html5, css, JS, bluehost 
 
 Design documentation including, 
    Design process 
