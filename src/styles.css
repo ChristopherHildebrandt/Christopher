@@ -25,7 +25,7 @@ header,
 body,
 article,
 aside, 
-footer, {  
+footer {  
   background: whitesmoke;
 }
 
@@ -51,22 +51,20 @@ header {
 button {  
   display: block; /* Make the buttons appear below each other */
   background-color: whitesmoke; /* match the colour of the grid background */
-  padding: 10px 24px; /* Some padding */
+  padding: 10px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   color: black;
   border: none;
+  font-size: 1rem;
 }
 
-button:hover {
-  border: #708090
-}
 
 .dropdown-content-bars {
   display: none;
   position: absolute;
-  align-content: center;
+  right: 0;
   background-color: whitesmoke;
-  min-width: 160px;
+  min-width: 100%;
   z-index: 1;
   cursor: pointer;
 }
@@ -74,8 +72,9 @@ button:hover {
 /* Links inside the dropdown */
 .dropdown-content-bars a {
   color: black;
-  padding: 12px 16px;
+  padding: 10px;
   text-decoration: none;
+  text-align: center;
   display: block;
 }
 
@@ -220,6 +219,9 @@ aside {
 
 /* Footer Start ======================================================================================================================== */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 20vh;
 }
 
