@@ -43,7 +43,79 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; 
-  height: 10vh;
+  height: 20vh;
+}
+
+/* M E - text animation */
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+div.opening-text{
+  width: 55%;
+  top: 0%;
+  right: 0%;
+}
+
+.letter{  
+  position: relative;
+  display: flex;
+  top: 0%;
+  right: 0%;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.05em;
+  color: #708090;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 2;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter); /* Letter C from index.html div opening-text */
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+/* Defines the speed at which the text animation transitions onto the page on load/refresh */
+.letter, .letter:before, .letter:after{
+  transition: all 1.3s ease-in-out;
+}
+.letter:before{
+  color: #eae3d3;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
 }
 
 /* Header: Bars Dropdown - Responsive Minimalist styling*/
@@ -90,13 +162,13 @@ button {
 }
 /* Header End ======================================================================================================================== */
 
-/* Article Start ======================================================================================================================== */
+/* Section Start ======================================================================================================================== */
 section {
   background: #eae3d3;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 50vh;
 }
 
 section:hover{
@@ -106,8 +178,8 @@ section:hover{
 /* animation for face */
 /* sizing & colour of element is defined in .article so we use transparent here */
 svg {
-  height: 50vh;
-  width: 50vw;
+  height: 40vh;
+  width: 40vw;
   background-color: transparent;
   z-index: 1;
 }
@@ -128,81 +200,14 @@ path {
   }
 }
 
-/* M E - text animation */
-*, *:before, *:after{
-  box-sizing:border-box;
-}
-
-div.opening-text{
-  width: 70%;
-}
-.letter{  
-  position: relative;
-  display: flex;
-  font-weight: 900;
-  font-size: 8em;
-  margin: 0.05em;
-  color: #eae3d3;
-  transform-style: preserve-3d;
-  perspective: 400;
-  z-index: 2;
-}
-.letter:before, .letter:after{
-  position:absolute;
-  content: attr(data-letter);
-  transform-origin: top left;
-  top:0;
-  left:0;
-}
-/* Defines the speed at which the text animation transitions onto the page on load/refresh */
-.letter, .letter:before, .letter:after{
-  transition: all 1.3s ease-in-out;
-}
-.letter:before{
-  color: #fff;
-  text-shadow: 
-    -1px 0px 1px rgba(255,255,255,.8),
-    1px 0px 1px rgba(0,0,0,.8);
-  z-index: 3;
-  transform:
-    rotateX(0deg)
-    rotateY(-15deg)
-    rotateZ(0deg);
-}
-.letter:after{
-  color: rgba(0,0,0,.11);
-  z-index:2;
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg,1deg);
-}
-.letter:hover:before{
-  color: #fafafa;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
-}
-.letter:hover:after{
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(40deg)
-    rotateZ(0deg)
-    skew(0deg,22deg);
-}
-
-/* Article End ======================================================================================================================== */
+/* Section End ======================================================================================================================== */
 
 /* Aside Start ======================================================================================================================== */
 aside {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 50vh;
 }
 
 /*  */
