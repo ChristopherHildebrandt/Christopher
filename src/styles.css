@@ -16,18 +16,18 @@
 
 header,
 footer {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 2; /* header and footer spans horizontally 100% accross page */
 }
 /* Grid End ========================================================================================================================== */
 
 /* Keep things DRY */
-header,
+/* header,
 body,
 article,
 aside, 
 footer {  
   background: whitesmoke;
-}
+} */
 
 /* Body Start ========================================================================================================================== */
 body {
@@ -80,7 +80,8 @@ button {
 
 /* On hover, change the colour of the text */
 .dropdown-content-bars a:hover {
-  background-color: #708090
+  background-color: #708090;
+  color: whitesmoke; 
 }
 
 /* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
@@ -90,7 +91,7 @@ button {
 /* Header End ======================================================================================================================== */
 
 /* Article Start ======================================================================================================================== */
-article {
+section {
   background: #eae3d3;
   display: flex;
   align-items: center;
@@ -98,7 +99,7 @@ article {
   height: 70vh;
 }
 
-article:hover{
+section:hover{
   background: #708090;
 }
 
@@ -208,7 +209,7 @@ aside {
 .btn-group button {  
   display: block; /* Make the buttons appear aligned verticle */
   background-color: whitesmoke; /* match the colour of the grid background */
-  padding: 10px 24px; /* Some padding */
+  padding: 10px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   color: black;
   border: none;
