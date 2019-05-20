@@ -46,6 +46,95 @@ header {
   height: 20vh;
 }
 
+
+/* Header: Bars Dropdown - Responsive Minimalist styling*/
+/* Dropdown Button */
+button {  
+  display: block; /* Make the buttons appear below each other */
+  background-color: whitesmoke; /* match the colour of the grid background */
+  padding: 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  color: black;
+  border: none;
+  font-size: 1rem;
+}
+
+
+.dropdown-content-bars {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: whitesmoke;
+  min-width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-bars a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+/* On hover, change the colour of the text */
+.dropdown-content-bars a:hover {
+  background-color: #708090;
+  color: whitesmoke; 
+}
+
+/* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
+.show {
+  display: block;
+}
+
+
+
+/* Header End ======================================================================================================================== */
+
+/* Section Start ======================================================================================================================== */
+section {
+  background: #eae3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+section:hover{
+  background: #708090;
+}
+
+/* animation for face */
+/* sizing & colour of element is defined in .article so we use transparent here */
+svg {
+  height: 40vh;
+  width: 40vw;
+  background-color: transparent;
+  z-index: 1;
+}
+
+/* The animation property draw 2s defines the duration of the animation; infinate defines that it will repeat indefinitely */
+path {
+  stroke-dasharray: 10;
+  animation: draw 2s infinite;
+}
+
+/* stroke-dashoffset defines the speed of the dash animation */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+
+
+
+
 /* M E - text animation */
 *, *:before, *:after{
   box-sizing:border-box;
@@ -118,87 +207,12 @@ div.opening-text{
     skew(0deg,22deg);
 }
 
-/* Header: Bars Dropdown - Responsive Minimalist styling*/
-/* Dropdown Button */
-button {  
-  display: block; /* Make the buttons appear below each other */
-  background-color: whitesmoke; /* match the colour of the grid background */
-  padding: 10px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  color: black;
-  border: none;
-  font-size: 1rem;
-}
 
 
-.dropdown-content-bars {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: whitesmoke;
-  min-width: 100%;
-  z-index: 1;
-  cursor: pointer;
-}
 
-/* Links inside the dropdown */
-.dropdown-content-bars a {
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-}
 
-/* On hover, change the colour of the text */
-.dropdown-content-bars a:hover {
-  background-color: #708090;
-  color: whitesmoke; 
-}
 
-/* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
-.show {
-  display: block;
-}
-/* Header End ======================================================================================================================== */
 
-/* Section Start ======================================================================================================================== */
-section {
-  background: #eae3d3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-}
-
-section:hover{
-  background: #708090;
-}
-
-/* animation for face */
-/* sizing & colour of element is defined in .article so we use transparent here */
-svg {
-  height: 40vh;
-  width: 40vw;
-  background-color: transparent;
-  z-index: 1;
-}
-
-/* The animation property draw 2s defines the duration of the animation; infinate defines that it will repeat indefinitely */
-path {
-  stroke-dasharray: 10;
-  animation: draw 2s infinite;
-}
-
-/* stroke-dashoffset defines the speed of the dash animation */
-@keyframes draw {
-  from {
-    stroke-dashoffset: 0
-  }
-  to {
-    stroke-dashoffset: 100;
-  }
-}
 
 /* Section End ======================================================================================================================== */
 
@@ -207,7 +221,7 @@ aside {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 60vh;
 }
 
 /*  */
@@ -230,4 +244,24 @@ footer {
   justify-content: center;
   height: 20vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
