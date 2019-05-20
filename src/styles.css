@@ -94,6 +94,10 @@ button {
 
 /* Header End ======================================================================================================================== */
 
+
+/* Article Start */
+
+
 /* Section Start ======================================================================================================================== */
 section {
   background: #eae3d3;
@@ -134,26 +138,31 @@ path {
 
 
 
+/* RESUME.HTML */
 
+.hello {
+  position: relative;
+  display: block;
+  font-family: Helvetica, sans-serif;
+  font-size: 2.5rem;
+	color: #fff;
+  padding: .5em;
+}
+  
 /* M E - text animation */
 *, *:before, *:after{
   box-sizing:border-box;
 }
 
 div.opening-text{
-  width: 55%;
-  top: 0%;
-  right: 0%;
+  width: 80%;
 }
 
 .letter{  
   position: relative;
   display: flex;
-  top: 0%;
-  right: 0%;
   font-weight: 900;
-  font-size: 8em;
-  margin: 0.05em;
+  font-size: 21em;
   color: #708090;
   transform-style: preserve-3d;
   perspective: 400;
@@ -163,8 +172,6 @@ div.opening-text{
   position:absolute;
   content: attr(data-letter); /* Letter C from index.html div opening-text */
   transform-origin: top left;
-  top:0;
-  left:0;
 }
 /* Defines the speed at which the text animation transitions onto the page on load/refresh */
 .letter, .letter:before, .letter:after{
@@ -206,12 +213,6 @@ div.opening-text{
     rotateZ(0deg)
     skew(0deg,22deg);
 }
-
-
-
-
-
-
 
 
 /* Section End ======================================================================================================================== */

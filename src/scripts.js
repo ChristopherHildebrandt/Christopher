@@ -52,19 +52,19 @@ function smile() {
     }, 1000);
   setTimeout(function () {
       a.innerHTML = "&#xf119;";
-    }, 2000);
+    }, 3000);
   setTimeout(function () {
       a.innerHTML = "&#xf11a;";
-    }, 3000);
-    setTimeout(function () {
-      a.innerHTML = "&#xf57f;";
-    }, 4000);
-    setTimeout(function () {
-      a.innerHTML = "&#xf579;";
     }, 5000);
     setTimeout(function () {
+      a.innerHTML = "&#xf57f;";
+    }, 7000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf579;";
+    }, 9000);
+    setTimeout(function () {
       a.innerHTML = "&#xf583;";
-    }, 6000);
+    }, 11000);
 }
 smile();
 setInterval(smile, 7000);
@@ -87,7 +87,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
+  setTimeout(carousel, 8000);
 }
 
 
