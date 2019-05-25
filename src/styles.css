@@ -4,19 +4,6 @@
   padding: 0;
 }
 
-/* Responsive =======================================================================================================================*/
-
-html { 
-  font-size: 2vw; 
-}
-
-
-
-/* Responsive =======================================================================================================================*/
-
-
-
-
 /* Grid End ======================================================================================================================== */
 /* Defining a responsive grid layout, to cover screen
    used in a way so each page has a degree of uniformity*/
@@ -32,17 +19,6 @@ footer {
   grid-column: 1 / span 2; /* header and footer spans horizontally 100% accross page */
 }
 /* Grid End ========================================================================================================================== */
-
-/* Keep things DRY */
-/* header,
-body,
-article,
-aside, 
-footer {  
-  background: whitesmoke;
-} */
-
-
 
 /* Body Start ========================================================================================================================== */
 body {
@@ -71,7 +47,7 @@ button {
   cursor: pointer; /* Pointer/hand icon */
   color: black;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 button:hover {
@@ -109,13 +85,7 @@ button:hover {
   display: block;
 }
 
-
-
 /* Header End ======================================================================================================================== */
-
-
-/* Article Start */
-
 
 /* Section Start ======================================================================================================================== */
 section {
@@ -124,7 +94,8 @@ section {
   align-items: center;
   justify-content: center;
   height: 60vh;
-  border-radius: 30px 90px;
+  border-radius: 15px;
+  border-color: white;
 }
 
 section:hover{
@@ -209,34 +180,26 @@ path {
 }
 
 
+.hello{
+  animation:helloText 4s infinite;
+  font-size: 3em;
+}
+
+@keyframes helloText{
+  0%{     color: aquamarine   }
+  49%{    color: #708090; }
+  50%{    color: white; }
+  99%{    color: antiquewhite;  }
+  100%{   color: aqua;    }
+}
+
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
 
-p {
-  color: #eae3d3;
-}
-
-
-
-
-
-
-
-
-/* .hello {
-  position: relative;
-  display: block;
-  font-family: Helvetica, sans-serif;
-  font-size: 2.5rem;
-	color: #fff;
-  padding: .5em;
-} */
   
 /* M E - text animation */
-/* *, *:before, *:after{
-  box-sizing:border-box;
-}
+
 
 div.opening-text{
   width: 80%;
@@ -255,10 +218,10 @@ div.opening-text{
 .letter:before, .letter:after{
   position:absolute;
   content: attr(data-letter); /* Letter C from index.html div opening-text */
-  /* transform-origin: top left;
-} */ 
+  transform-origin: top left;
+} 
 /* Defines the speed at which the text animation transitions onto the page on load/refresh */
-/* .letter, .letter:before, .letter:after{
+.letter, .letter:before, .letter:after{
   transition: all 1.3s ease-in-out;
 }
 .letter:before{
@@ -296,7 +259,7 @@ div.opening-text{
     rotateY(40deg)
     rotateZ(0deg)
     skew(0deg,22deg);
-} */
+} 
 
 
 /* Section End ======================================================================================================================== */
