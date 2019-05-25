@@ -4,6 +4,28 @@
   padding: 0;
 }
 
+/* Responsive =======================================================================================================================*/
+
+html
+
+
+
+
+
+
+
+/* Responsive =======================================================================================================================*/
+
+html { 
+  font-size: 2vw; 
+}
+
+h1 { 
+  font-size: 2em; 
+}
+
+
+
 /* Grid End ======================================================================================================================== */
 /* Defining a responsive grid layout, to cover screen
    used in a way so each page has a degree of uniformity*/
@@ -28,6 +50,8 @@ aside,
 footer {  
   background: whitesmoke;
 } */
+
+
 
 /* Body Start ========================================================================================================================== */
 body {
@@ -59,6 +83,10 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  color: aqua
+}
+
 
 .dropdown-content-bars {
   display: none;
@@ -81,8 +109,8 @@ button {
 
 /* On hover, change the colour of the text */
 .dropdown-content-bars a:hover {
-  background-color: #708090;
-  color: whitesmoke; 
+  background-color: transparent;
+  color: #eae3d3; 
 }
 
 /* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
@@ -105,6 +133,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 60vh;
+  border-radius: 30px 90px;
 }
 
 section:hover{
@@ -140,17 +169,79 @@ path {
 
 /* RESUME.HTML */
 
-.hello {
+/* Slideshow container - same size as specified grid */
+.slideshow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background: transparent;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  position: absolute;
+  float: left; 
+  bottom: 10vh;
+  padding: 20px;
+  background:transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color:#eae3d3;
+}
+
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+
+
+
+
+
+
+
+
+/* .hello {
   position: relative;
   display: block;
   font-family: Helvetica, sans-serif;
   font-size: 2.5rem;
 	color: #fff;
   padding: .5em;
-}
+} */
   
 /* M E - text animation */
-*, *:before, *:after{
+/* *, *:before, *:after{
   box-sizing:border-box;
 }
 
@@ -171,10 +262,10 @@ div.opening-text{
 .letter:before, .letter:after{
   position:absolute;
   content: attr(data-letter); /* Letter C from index.html div opening-text */
-  transform-origin: top left;
-}
+  /* transform-origin: top left;
+} */ 
 /* Defines the speed at which the text animation transitions onto the page on load/refresh */
-.letter, .letter:before, .letter:after{
+/* .letter, .letter:before, .letter:after{
   transition: all 1.3s ease-in-out;
 }
 .letter:before{
@@ -212,7 +303,7 @@ div.opening-text{
     rotateY(40deg)
     rotateZ(0deg)
     skew(0deg,22deg);
-}
+} */
 
 
 /* Section End ======================================================================================================================== */
@@ -234,6 +325,11 @@ aside {
   color: black;
   border: none;
 }
+
+button:hover {
+  color:#eae3d3;
+}
+
 
 
 /* Aside End ======================================================================================================================== */
