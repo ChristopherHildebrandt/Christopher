@@ -1,6 +1,4 @@
 
-
-
 // ======================================================================
 // Header Navigation 
 // ======================================================================
@@ -71,26 +69,8 @@ setInterval(smile, 7000);
 
 
 // ======================================================================
-// Slide show - Slider (auto-timer)
+// Slide show - Slider (dots)
 // ======================================================================
-
-// Automatic Slideshow - change image every 3 seconds
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("my-items");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}
-//   x[myIndex-1].style.display = "block";
-//   setTimeout(carousel, 8000);
-// }
-
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
