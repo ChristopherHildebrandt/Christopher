@@ -1,4 +1,4 @@
-================================================================
+
 Project documentation
 ================================================================
 
@@ -8,7 +8,7 @@ Another Portfolio Page
 https://www.onecollectiveagency.com/resume.html
 https://www.github.com/christopherhildebrandt
 
-================================================================
+
 Description:
 ================================================================
 
@@ -31,7 +31,7 @@ Description:
 
    6. Tech stack -  html5, css, JS, bluehost 
    
-================================================================
+
 Design Documentation
 ================================================================
 
@@ -45,7 +45,7 @@ Details of planning process including, (can be found in the folder docs/img. )
    Project plan & timeline 
    Screenshots of Trello board(s)
 
-================================================================
+
 Short Answer
 ================================================================
 1. 
