@@ -4,6 +4,31 @@
   padding: 0;
 }
 
+
+
+/* DRY TEXT */
+
+h2 {
+  padding: .4em;
+  color: rgb(243, 225, 177);
+}
+h3{
+  padding: .2em;
+  color: rgb(243, 225, 177);
+}
+h4 {
+  padding: .2em;
+  color: aliceblue;
+}
+
+i {
+  padding: .3em;
+  color: #b8d0e9;
+}
+
+
+
+
 /* Grid End ======================================================================================================================== */
 /* Defining a responsive grid layout, to cover screen
    used in a way so each page has a degree of uniformity*/
@@ -57,7 +82,7 @@ button {
 }
 
 button:hover {
-  color: aqua
+  color: rgb(243, 225, 177);
 }
 
 
@@ -83,7 +108,7 @@ button:hover {
 /* On hover, change the colour of the text */
 .dropdown-content-bars a:hover {
   background-color: transparent;
-  color: #eae3d3;
+  color: #2c3539;
 }
 
 /* Show the dropdown menu, using JS to add this class to the .dropdown-content-bars container when the user clicks on the dropdown button */
@@ -95,7 +120,7 @@ button:hover {
 
 /* Section Start ======================================================================================================================== */
 section {
-  background: #eae3d3;
+  background: #2c3539;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,18 +207,18 @@ path {
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  background-color: #eae3d3;
+  background-color: #2c3539;
 }
 
 
 .hello {
-  animation: helloText 4s infinite;
+  animation: helloText 8s infinite;
   font-size: 3em;
 }
 
 @keyframes helloText {
   0% {
-    color: aquamarine
+    color: rgb(51, 51, 50);
   }
 
   49% {
@@ -201,81 +226,16 @@ path {
   }
 
   50% {
-    color: white;
+    color: rgb(114, 105, 88);
   }
 
   99% {
-    color: antiquewhite;
+    color: rgb(215, 223, 250);
   }
 
   100% {
-    color: aqua;
+    color: rgb(46, 38, 25);
   }
-}
-
-/* Add a blue color to the author */
-.author {
-  color: cornflowerblue;
-}
-
-/* M E - text animation */
-
-div.opening-text {
-  width: 80%;
-}
-
-.letter {
-  position: relative;
-  display: flex;
-  font-weight: 900;
-  font-size: 21em;
-  color: #708090;
-  transform-style: preserve-3d;
-  perspective: 400;
-  z-index: 2;
-}
-
-.letter:before,
-.letter:after {
-  position: absolute;
-  content: attr(data-letter);
-  /* Letter C from index.html div opening-text */
-  transform-origin: top left;
-}
-
-/* Defines the speed at which the text animation transitions onto the page on load/refresh */
-.letter,
-.letter:before,
-.letter:after {
-  transition: all 1.3s ease-in-out;
-}
-
-.letter:before {
-  color: #eae3d3;
-  text-shadow:
-    -1px 0px 1px rgba(255, 255, 255, .8),
-    1px 0px 1px rgba(0, 0, 0, .8);
-  z-index: 3;
-  transform:
-    rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
-}
-
-.letter:after {
-  color: rgba(0, 0, 0, .11);
-  z-index: 2;
-  transform:
-    scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
-}
-
-.letter:hover:before {
-  color: #fafafa;
-  transform:
-    rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
-}
-
-.letter:hover:after {
-  transform:
-    scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
 }
 
 /* Section End ======================================================================================================================== */
@@ -303,7 +263,7 @@ aside {
 }
 
 button:hover {
-  color: #eae3d3;
+  color: #2c3539;
 }
 
 /* Aside End ======================================================================================================================== */
