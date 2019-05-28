@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-  color: rgb(243, 225, 177);
+  color: #7fb0c5;
 }
 
 
@@ -130,7 +130,7 @@ section {
 }
 
 section:hover {
-  background: #708090;
+  background: #1F262A;
 }
 
 /* animation for face */
@@ -218,24 +218,28 @@ path {
 
 @keyframes helloText {
   0% {
-    color: rgb(51, 51, 50);
+    color: #AAA9AD;
   }
 
   49% {
-    color: #708090;
+    color: #848689;
   }
 
   50% {
-    color: rgb(114, 105, 88);
+    color: #5B676D;
   }
 
   99% {
-    color: rgb(215, 223, 250);
+    color: #2A3439;
   }
 
   100% {
-    color: rgb(46, 38, 25);
+    color: #1F262A;
   }
+}
+
+smile{
+  color: white;
 }
 
 /* Section End ======================================================================================================================== */
@@ -263,7 +267,7 @@ aside {
 }
 
 button:hover {
-  color: #2c3539;
+  color: #7fb0c5;
 }
 
 /* Aside End ======================================================================================================================== */
